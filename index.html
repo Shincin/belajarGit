@@ -1,11 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Git</title>
-</head>
-<body>
-    <H1>Belajar Git Hubgit</H1>
-</body>
+  <head>
+    <title>Susu Steril So Good Indonesia | Kebaikan Susu Alami</title>
+    <meta
+      name="description"
+      content="Susu Steril So Good diproses dengan teknologi modern untuk menjaga kualitas nutrisi susu sapi asli. Temukan energi harianmu di sini!"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .utama {
+        height: 350dvh;
+        width: 100dvw;
+        background-color: cornsilk;
+        flex-direction: column;
+        
+      }
+      .utama > a {
+        color: rgb(167, 245, 50);
+      }
+
+      nav {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo {
+        padding: 30px;
+      }
+
+      a {
+        color: rgb(1, 87, 1);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main {
+        flex: 30;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+      }
+      main > .pos1 {
+        flex: 1;
+      }
+      main > .pos2 {
+        flex: 1;
+      }
+      main > .pos3 {
+        flex: 1;
+      }
+      main > .pos4 {
+        flex: 8;
+      }
+
+      .pos1 {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .pos1 > section {
+        flex: 1;
+      }
+
+      .pos1 > .gambar {
+        flex: 1;
+        background-image: url("img/???.png");
+        background-size: contain;
+        border-radius: 20px 0px 0px 20px;
+        transform: 3s;
+        animation: gesergambar;
+      }
+      .pos1 > .gambar:hover {
+        width: 500px;
+        height: 300px;
+      }
+      @keyframes gesergambar{
+        
+      }
+
+      .pos1 > .judul {
+        padding: 5dvw;
+      }
+
+      .pos1 > .judul > h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(2, 156, 2);
+      }
+
+      .pos1 > .judul > p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5rem;
+      }
+      .pos1 > .judul > .promo {
+        color: rgb(245, 3, 3);
+      }
+      .pos1 > .judul > button {
+        background-color: red;
+        color: white;
+        transition: 2s;
+        width: 300px;
+        height: 50px;
+
+      }
+
+      .pos1 > .judul > button:hover {
+        background-color: rgb(44, 233, 6);
+        width: 400px;
+        height: 50px;
+      }
+
+      .pos2 {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      .pos2 > section {
+        background-color: rgb(16, 212, 16);
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pos2 > .gambar {
+        flex: 1;
+        background-image: url("img/???.png");
+        background-size: contain;
+      }
+
+      .pos2 > .judul {
+        padding: 5dvw;
+        
+      }
+
+      .pos2 > .judul > h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        transform: 5s;
+        transition: 2s;
+      }
+      .pos2 > .judul > h1:hover {
+        color: pink ;
+      }
+      @keyframes animasi {
+        
+      }
+
+      .pos3 {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        margin: 30px;
+        border-radius: 50px 30px 0px 50px; 
+        
+      }
+      .pos3 > section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pos3 > .gambar1 {
+        flex: 1;
+        background-image: url("img/pabrik1.jpg");
+        background-size: contain;
+        background-color: goldenrod;
+      }
+
+      .pos3 > .gambar2 {
+        flex: 1;
+        background-image: url("img/pabrik2.jpg");
+        background-size: contain;
+        background-color: goldenrod;
+      }
+
+      .pos3 > .gambar3 {
+        flex: 1;
+        background-image: url("img/pabrik3.jpg");
+        background-size: contain;
+        background-color: goldenrod;
+      }
+
+      .pos4 {
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+      }
+      .pos4 > section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pos4 > .gambar1 {
+        flex: 1;
+        background-image: url("img/???.jpg");
+        background-size: contain;
+      }
+
+      .pos4 > .gambar2 {
+        flex: 1;
+        background-image: url("img/???.jpg");
+        background-size: contain;
+      }
+
+      footer {
+        flex: 1;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+      }
+      footer > section {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+      }
+
+      button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 20px;
+        border-color: transparent;
+        margin-left: 0px;
+      }
+
+      .promo {
+        font-size: 40px;
+        font-weight: bold;
+        font-style: initial;
+      }
+      .harga {
+        font-size: 40px;
+        font-weight: bold;
+        color: hitam;
+      }
+      .produk {
+        font-size: 40px;
+        font-weight: bold;
+        color: hitam;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="utama">
+      <header>
+        <nav>
+          <img
+            class="logo"
+            src="img/logo.png"
+            alt=""
+            width="80px"
+            alt="Susu Steril So Good Indonesia"
+          />
+          <a href="">About</a>
+          <a href="">Menu</a>
+          <a href="">Store</a>
+        </nav>
+      </header>
+      <main>
+        <section class="pos1">
+          <section class="judul">
+            <h1>Susu Steril SO GOOD</h1>
+            <p>
+              So Good Susu Steril terbuat dari 100% susu sapi segar dengan
+              kualitas yang terbaik dan telah melalui proses sterilisasi. So
+              Good Susu Steril dapat di konsumsi setiap hari sesuai kebutuhan
+              akan susu.
+            </p>
+            <br />
+            <label class="promo">Rp. 9.200</label>
+            <label class="harga">Rp. 6.700</label>
+            <br /><br />
+            <button>ORDER SEKARANG</button>
+          </section>
+          <section class="gambar">
+            <img src="img/kemasan.png" width="400px" height="600px">
+          </section>
+        </section>
+        <section class="pos2">
+          <section class="gambar">
+            <img src="img/sapi.png" width="20%">
+          </section>
+          <section class="judul">
+            <h1>So Good Susu Steril 100% Indonesia. Bikin Mood Auto Good!</h1>
+          </section>
+        </section>
+        <section class="pos3">
+          <section class="gambar1">
+          </section>
+          <section class="gambar2">
+          </section>
+          <section class="gambar3">
+          </section>
+        </section>
+        <section class="pos4">
+          <section class="gambar1">
+            <img src="img/promosi1.jpg" width="100%">
+          </section>
+          <section class="gambar2">
+            <img src="img/promosi2.jpg" width="100%">
+          </section>
+        </section>
+      </main>
+      <footer>
+        <section>
+          <img
+            src="img/logo.png"
+            alt=""
+            srcset=""
+            width="100px"
+            alt="Susu Steril So Good Indonesia"
+          />
+        </section>
+        <section>
+          <p>
+            RUKO, Jl. Pd. Maspion No.7, Pepe, Pepelegi, Kec. Waru, Kabupaten
+            Sidoarjo, Jawa Timur 61256
+          </p>
+        </section>
+        <section>
+          <p>
+            CUSTOMER CARE <br />
+            layanansogoodfood@japfa.com <br />(0804) 150 9006
+          </p>
+        </section>
+      </footer>
+    </main>
+  </body>
 </html>
